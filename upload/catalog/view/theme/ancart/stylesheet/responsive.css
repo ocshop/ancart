@@ -1,0 +1,40 @@
+img{
+	max-width:100%;
+}
+.small_cat{
+	position: relative;
+	z-index: 30;
+	margin: 10px 10px 20px 10px;
+	width: 80px;
+}
+.small_cat div{
+	padding: 0px 16px;
+	overflow: hidden;
+	position: relative;
+	height: 45px;
+	color: #fff;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:bold;
+	background:#585858;
+	border: 1px solid #000000;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+.small_cat div img{
+	margin-top: 10px;
+}
+.small_cat select{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+	cursor: pointer;
+}
+.small_cat, .small_content{
+	display:none;
+}
