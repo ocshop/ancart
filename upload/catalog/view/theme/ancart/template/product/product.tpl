@@ -10,7 +10,7 @@
     <?php if ($thumb || $images) { ?>
     <div class="left">
       <?php if ($thumb) { ?>
-      <div class="image"><a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="colorbox"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" /></a></div>
+      <div class="image"><?php echo $sticker; ?><a href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>" class="colorbox"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" id="image" /></a></div>
       <?php } ?>
       <?php if ($images) { ?>
       <div class="image-additional">
@@ -328,7 +328,7 @@
       <?php foreach ($products as $product) { ?>
       <div>
         <?php if ($product['thumb']) { ?>
-        <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
+        <div class="image"><?php echo $product['sticker']; ?><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
         <?php } ?>
 		<div class="cart-box">
 		<div class="cart"><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a></div>
@@ -366,7 +366,7 @@
       <?php foreach ($products2 as $product) { ?>
       <div>
         <?php if ($product['thumb']) { ?>
-        <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
+        <div class="image"><?php echo $product['sticker']; ?><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
         <?php } ?>
 		<div class="cart-box">
 		<div class="cart"><a onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button"><?php echo $button_cart; ?></a></div>

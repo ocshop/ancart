@@ -6,7 +6,7 @@
       <?php foreach ($products as $product) { ?>
       <div>
         <?php if ($product['thumb']) { ?>
-        <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
+        <div class="image"><?php echo $product['sticker']; ?><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" /></a></div>
         <?php } ?>
 		<div class="cart-box">
 		<div class="cart"><a type="button" value="<?php echo $button_cart; ?>" onclick="addToCart('<?php echo $product['product_id']; ?>');" class="button" >Add to cart </a></div>

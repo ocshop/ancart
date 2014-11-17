@@ -8,7 +8,7 @@
       <div style="margin:0px;width:100%;">
         <?php if ($review['product_id']) {?>
           <?php if ($review['prod_thumb']) { ?>
-          <div style="margin-top:10px;" class="image"><a href="<?php echo $review['prod_href']; ?>"><img src="<?php echo $review['prod_thumb']; ?>" alt="<?php echo $review['prod_name']; ?>" title="<?php echo $review['prod_name']; ?>"/></a></div>
+          <div style="margin-top:10px;" class="image"><?php echo $review['sticker']; ?><a href="<?php echo $review['prod_href']; ?>"><img src="<?php echo $review['prod_thumb']; ?>" alt="<?php echo $review['prod_name']; ?>" title="<?php echo $review['prod_name']; ?>"/></a></div>
           <?php } ?>
           <div class="name"><a href="<?php echo $review['prod_href']; ?>"><?php echo $review['prod_name']; ?></a></div>
           <?php } ?>
