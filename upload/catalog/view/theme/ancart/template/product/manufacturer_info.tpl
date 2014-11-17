@@ -7,6 +7,16 @@
   </div>
   <h1><?php echo $heading_title; ?></h1>
   <?php echo $content_top; ?>
+  <?php if ($thumb || $description) { ?>
+  <div class="category-info">
+  <?php if ($description) { ?>
+    <?php if ($thumb) { ?>
+    <div class="image"><img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title; ?>" /></div>
+    <?php } ?>
+    <?php echo $description; ?>
+    <?php } ?>
+  </div>
+  <?php } ?>
   <?php if ($products) { ?>
   <div class="product-filter">
     <div class="display"><?php echo $text_display; ?> <i class="fa fa-list fa-lg"></i><a onclick="displaybutton('grid');"><i class="fa fa-th fa-lg"></i></a></div>
