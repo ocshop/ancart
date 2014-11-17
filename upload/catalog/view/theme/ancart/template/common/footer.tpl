@@ -38,9 +38,11 @@
   <div class="column">
     <h3><?php echo $text_service; ?></h3>
     <ul>
+	  <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
+	  <li><a href="<?php echo $abuses; ?>"><?php echo $text_abuses; ?></a></li>
+	  <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
       <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
-      <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
-      <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
+      <li><a href="<?php echo $testimonial; ?>"><?php echo $text_testimonial; ?></a></li>
       <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
     </ul>
   </div>
@@ -59,6 +61,8 @@
     <ul>
       <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
       <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
+	  <li><a href="<?php echo $bestseller; ?>"><?php echo $text_bestseller; ?></a></li>
+	  <li><a href="<?php echo $mostviewed; ?>"><?php echo $text_mostviewed; ?></a></li>
 	  <li><a href="<?php echo $latest; ?>"><?php echo $text_latest; ?></a></li>
     </ul>
   </div>
@@ -69,11 +73,11 @@ Please donate via PayPal to donate@opencart.com
 //-->
 <div id="powered"><?php echo $powered; ?> - <a href="http://www.focusthemes.net" target="_blank"></a> Design by <a href="http://www.focusthemes.com" target="_blank">FocusThemes</a></div> 
 <div id="social">
-	   <a target="_blank" href="<?php echo $vk; ?>"><i class="fa fa-vk"></i></a>
-	   <a target="_blank" href="<?php echo $fb; ?>"><i class="fa fa-facebook"></i></a>
-	   <a target="_blank" href="<?php echo $googleplus; ?>"><i class="fa fa-google-plus"></i></a>
-	   <a target="_blank" href="<?php echo $youtube; ?>"><i class="fa fa-youtube"></i></a>
-	   <a target="_blank" href="<?php echo $twitter; ?>"><i class="fa fa-twitter"></i></a>
+	   <?php if ($vk) { ?><a target="_blank" href="<?php echo $vk; ?>"><i class="fa fa-vk"></i></a><?php } ?>
+	   <?php if ($fb) { ?><a target="_blank" href="<?php echo $fb; ?>"><i class="fa fa-facebook"></i></a><?php } ?>
+	   <?php if ($googleplus) { ?><a target="_blank" href="<?php echo $googleplus; ?>"><i class="fa fa-google-plus"></i></a><?php } ?>
+	   <?php if ($youtube) { ?><a target="_blank" href="<?php echo $youtube; ?>"><i class="fa fa-youtube"></i></a><?php } ?>
+	   <?php if ($twitter) { ?><a target="_blank" href="<?php echo $twitter; ?>"><i class="fa fa-twitter"></i></a><?php } ?>
 </div>
 <!--
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
