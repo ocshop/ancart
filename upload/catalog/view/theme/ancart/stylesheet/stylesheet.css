@@ -1899,6 +1899,13 @@ border-top: 1px solid #E1E1E1;
 	width: 58px;
 	position: absolute;
 }
+.image .corner_0 img,
+.image .corner_1 img,
+.image .corner_2 img,
+.image .corner_3 img {
+	border: none;
+    padding: 0;
+}
 .image .corner_0 {
 	left: 0px;
 	top: 0px;
