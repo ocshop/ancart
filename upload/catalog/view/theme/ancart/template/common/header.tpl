@@ -22,7 +22,7 @@
 <?php } ?>
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/ancart/stylesheet/stylesheet.css" />
 <link rel="stylesheet" type="text/css" href="catalog/view/theme/ancart/stylesheet/responsive.css" />
-<link rel="stylesheet" href="catalog/view/javascript/FortAwesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="catalog/view/javascript/FontAwesome/css/font-awesome.min.css">
 <?php foreach ($styles as $style) { ?>
 <link rel="<?php echo $style['rel']; ?>" type="text/css" href="<?php echo $style['href']; ?>" media="<?php echo $style['media']; ?>" />
 <?php } ?>
