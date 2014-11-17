@@ -1862,3 +1862,26 @@ border-top: 1px solid #E1E1E1;
 	margin-left: 1%;
     margin-right: 1%;
 }
+/*testimonials*/
+.testimonials #filter {
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+.testimonials #filter > span:hover, .testimonials #filter > span.active {
+	background: none repeat scroll 0 0 #eee;
+}
+.testimonials #filter > span {
+	border: 1px solid #ddd;
+	border-bottom: none;
+	float: left;
+	margin-right: -1px;
+}
+.testimonials #filter > span a {
+	text-decoration: none;
+	display: block;
+	padding: 8px 16px;
+}
+.testimonials #filter .button {
+	float: right;
+}
