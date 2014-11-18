@@ -4575,9 +4575,7 @@ CREATE TABLE `oc_article_description` (
   `seo_h1` varchar(255) NOT NULL,
   `tag` text NOT NULL,
   PRIMARY KEY (`article_id`,`language_id`),
-  KEY `name` (`name`),
-  FULLTEXT KEY `description` (`description`),
-  FULLTEXT KEY `tag` (`tag`)
+  KEY `name` (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
